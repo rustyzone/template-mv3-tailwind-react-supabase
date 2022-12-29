@@ -1,0 +1,11 @@
+{
+  "background": { "service_worker": "sw.ts" },
+  "content_scripts": [
+    {
+      "js": ["content/index.ts"],
+      "matches": ["https://*/*", "http://*/*"]
+    }
+  ],
+  "manifest_version": 3,
+  "action": { "default_popup": "pages/popup/index.html" }
+}
